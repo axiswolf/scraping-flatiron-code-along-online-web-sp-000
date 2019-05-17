@@ -1,7 +1,7 @@
 class Course
   attr_accessor :title, :schedule, :description
   @@all = []
-  def initalize(title, schedule, description)
+  def initialize(title, schedule, description)
     @title = title
     @schedule = schedule
     @description = description
