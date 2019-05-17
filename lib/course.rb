@@ -5,11 +5,11 @@ class Course
     #setter and getter method for title
     @title = title
   end
-  def schedule
+  def schedule(schedule)
     #setter and getter method for a course's schedule
     @schedule = schedule
   end
-  def description
+  def description(description)
     #seter and getter method for course's description
     @description = description
   end
