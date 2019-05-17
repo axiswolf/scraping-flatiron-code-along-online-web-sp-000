@@ -25,11 +25,11 @@ class Scraper
       course.schedule = post.css(".date").text
       course.description = post.css("p").text
     end
-    binding.pry
   end
-  # def get_courses
-  #   # responsible for using a CSS selector to grab all of the HTML elements that contain a course
-  # end
+    def get_courses
+     # responsible for using a CSS selector to grab all of the HTML elements that contain a course
+     self.get_page.css(".post")
+    end
   # def make_courses
   #   #responsible for actually instantiating course objects and giving each cousre object the correct title, schedule, and description
   # end
