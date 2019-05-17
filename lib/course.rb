@@ -2,7 +2,7 @@ class Course
   attr_accessor :title, :schedule, :description, :course
   @@all = []
   def initialize
-    @@all << self
+    @@all << course
   end
   def title(title)
     #setter and getter method for title
