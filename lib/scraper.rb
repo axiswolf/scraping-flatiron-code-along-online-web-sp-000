@@ -36,6 +36,7 @@ class Scraper
   # def print_courses
   #   #iterates all over the courses that gets created to puts...
   # end
+  binding.pry
 end
 
 #Scraper.new.get_page
