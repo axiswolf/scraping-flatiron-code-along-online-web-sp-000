@@ -27,6 +27,7 @@ class Course
   end
   def self.all
     # returns an array of all the instances of the Course's class
+    @@all << self
     @@all
   end
 end
