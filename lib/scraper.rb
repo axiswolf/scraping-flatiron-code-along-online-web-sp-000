@@ -15,7 +15,21 @@ class Scraper
       end
     end
   end
-  
+
+  def get_page
+    #responsible for using Nokogiri and open-uri to grab the entire HTML document from the web page
+    doc = Nokogiri::HTML(open("http://learn-co-curriculum.github.io/site-for-scraping/courses"))
+    binding.pry
+  end
+  def get_courses
+    # responsible for using a CSS selector to grab all of the HTML elements that contain a course
+  end
+  def make_courses
+    #responsible for actually instantiating course objects and giving each cousre object the correct title, schedule, and description
+  end
+  def print_courses
+    #iterates all over the courses that gets created to puts...
+  end
 end
 
 
