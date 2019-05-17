@@ -6,9 +6,8 @@ class Course
     @schedule = schedule
     @description = description
   end
-  def title(title)
+  def title
     #setter and getter method for title
-    @title = title
   end
   def schedule(schedule)
     #setter and getter method for a course's schedule
