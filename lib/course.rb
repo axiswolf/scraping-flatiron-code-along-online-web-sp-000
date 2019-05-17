@@ -1,6 +1,11 @@
 class Course
   @@all = []
   attr_accessor :title, :schedule, :description
+  def initalize(title, schedule, description)
+    @title = title
+    @schedule = schedule
+    @description = description
+  end
   def title(title)
     #setter and getter method for title
     @title = title
