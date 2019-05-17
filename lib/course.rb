@@ -1,8 +1,8 @@
 class Course
-  attr_accessor :title, :schedule, :description, :course
+  attr_accessor :title, :schedule, :description
   @@all = []
   def initialize
-    @@all << course
+    @@all << self
   end
   def title(title)
     #setter and getter method for title
