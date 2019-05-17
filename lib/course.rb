@@ -1,6 +1,7 @@
 class Course
   def title
     #setter and getter method for title
+    @title = title
   end
   def schedule
     #setter and getter method for a course's schedule
