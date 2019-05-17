@@ -9,6 +9,7 @@ class Course
   end
   def title(title)
     #setter and getter method for title
+    @title
   end
   def schedule(schedule)
     #setter and getter method for a course's schedule
