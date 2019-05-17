@@ -1,10 +1,10 @@
 class Course
   attr_accessor :title, :schedule, :description
   @@all = []
+  @@all << self
   def title(title)
     #setter and getter method for title
     @title = title
-    @@all << self
   end
   def title
     @title
