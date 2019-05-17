@@ -19,6 +19,9 @@ class Course
     #setter and getter method for a course's schedule
     @schedule = schedule
   end
+  def schedule
+    @schedule
+  end
   def description(description)
     #seter and getter method for course's description
     @description = description
