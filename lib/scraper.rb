@@ -31,3 +31,5 @@ class Scraper
     #iterates all over the courses that gets created to puts...
   end
 end
+
+Scraper.new.get_page
