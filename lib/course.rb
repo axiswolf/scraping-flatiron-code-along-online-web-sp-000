@@ -29,4 +29,7 @@ class Course
     # returns an array of all the instances of the Course's class
     @@all
   end
+  def self.reset_all
+    @@all.clear
+  end
 end
