@@ -5,7 +5,7 @@ class Course
   def schedule
     #setter and getter method for a course's schedule
   end
-  def description 
+  def description
     #seter and getter method for course's description
   end
   def self.all
