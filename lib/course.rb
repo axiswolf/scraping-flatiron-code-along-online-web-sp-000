@@ -26,6 +26,9 @@ class Course
     #seter and getter method for course's description
     @description = description
   end
+  def description
+    @description
+  end
   def self.all
     # returns an array of all the instances of the Course's class
     @@all
