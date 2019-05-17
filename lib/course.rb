@@ -7,7 +7,7 @@ class Course
     @description = description
     @@all << self
   end
-  def title
+  def title(title)
     #setter and getter method for title
   end
   def schedule(schedule)
