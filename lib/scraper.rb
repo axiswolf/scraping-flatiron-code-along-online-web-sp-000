@@ -19,7 +19,7 @@ class Scraper
   def get_page
     #responsible for using Nokogiri and open-uri to grab the entire HTML document from the web page
     doc = Nokogiri::HTML(open("http://learn-co-curriculum.github.io/site-for-scraping/courses"))
-    doc.css(".post").each do |post|
+      doc.css(".post").each do |post|
           course = Course.new
           course.title = post.css("h2").text
           course.schedule = post.css(".date").text
