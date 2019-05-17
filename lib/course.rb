@@ -1,4 +1,5 @@
 class Course
+  @@all = []
   def title
     #setter and getter method for title
     @title = title
@@ -13,5 +14,6 @@ class Course
   end
   def self.all
     # returns an array of all the instances of the Course's class
+    @all
   end
 end
