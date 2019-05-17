@@ -30,12 +30,18 @@ class Scraper
      # responsible for using a CSS selector to grab all of the HTML elements that contain a course
      self.get_page.css(".post")
     end
-  # def make_courses
-  #   #responsible for actually instantiating course objects and giving each cousre object the correct title, schedule, and description
-  # end
-  # def print_courses
-  #   #iterates all over the courses that gets created to puts...
-  # end
+  def make_courses
+    #responsible for actually instantiating course objects and giving each cousre object the correct title, schedule, and description
+    self.get_courses.each do |post|
+      course = Course.new
+      course.title = post.css("h2").text
+      course.schedule = post.css(".date").text
+      course.description = post.css("p").text
+    end
+  end
+  def print_courses
+    #iterates all over the courses that gets created to puts...
+  end
   binding.pry
 end
 
